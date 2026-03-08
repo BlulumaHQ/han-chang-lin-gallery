@@ -17,7 +17,7 @@ export default function GalleryPage() {
             Gallery
           </h1>
           <p className="text-center text-muted-foreground mb-12">
-            18 works · Mixed Media on Canvas
+            {artworks.length} works · Mixed Media on Canvas
           </p>
 
           {/* Category filter */}

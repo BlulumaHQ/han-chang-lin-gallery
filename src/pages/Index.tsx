@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ArtworkGrid from "@/components/ArtworkGrid";
+import HeroSlider from "@/components/HeroSlider";
 import { artworks } from "@/data/artworks";
-import emitFlow034 from "@/assets/emit-flow-034.webp";
 import emitFlow025 from "@/assets/emit-flow-025.webp";
 import photoStudio from "@/assets/photo-studio.webp";
 import photoGallery from "@/assets/photo-gallery.webp";
@@ -13,33 +13,8 @@ const selectedWorks = artworks.slice(0, 6);
 export default function HomePage() {
   return (
     <main>
-      {/* HERO */}
-      <section className="relative h-screen w-full overflow-hidden">
-        <img
-          src={emitFlow034}
-          alt="Emit Flow — abstract ocean landscape by John Han-Chang Lin"
-          className="absolute inset-0 w-full h-full object-cover animate-fade-in-slow"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
-        <div className="relative z-10 h-full flex flex-col justify-end pb-16 md:pb-24 px-6 md:px-16">
-          <div className="max-w-2xl animate-fade-in-up">
-            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-light text-primary-foreground leading-tight">
-              John Han-Chang Lin
-            </h1>
-            <p className="font-serif text-lg md:text-xl text-primary-foreground/80 mt-4 font-light italic">
-              Color as Meditation · Flow as Expression
-            </p>
-            <p className="font-serif text-base md:text-lg text-primary-foreground/60 mt-2">
-              林漢章 · 以色彩修行 · 讓靈魂流動
-            </p>
-            <div className="mt-8">
-              <Button variant="museum-light" size="lg" asChild>
-                <Link to="/gallery">View Gallery</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* HERO SLIDER — 3 slides */}
+      <HeroSlider />
 
       {/* ARTIST STATEMENT */}
       <section className="py-20 md:py-32 px-6 md:px-16">
@@ -79,7 +54,7 @@ export default function HomePage() {
           <div className="overflow-hidden">
             <img
               src={emitFlow025}
-              alt="Earth Layers series artwork"
+              alt="Earth Layers series artwork by John Han-Chang Lin"
               className="w-full aspect-[3/4] object-cover"
               loading="lazy"
             />
