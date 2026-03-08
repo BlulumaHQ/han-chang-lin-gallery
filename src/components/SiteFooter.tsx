@@ -21,18 +21,18 @@ export default function SiteFooter() {
             <p className="text-sm text-muted-foreground mt-3">Vancouver, Canada</p>
           </div>
           <div className="flex flex-col gap-2">
-            <Link to="/gallery" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
-            <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
-            <Link to="/exhibitions" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Exhibitions</Link>
-            <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+            <ScrollLink to="/gallery" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Gallery</ScrollLink>
+            <ScrollLink to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</ScrollLink>
+            <ScrollLink to="/exhibitions" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Exhibitions</ScrollLink>
+            <ScrollLink to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</ScrollLink>
           </div>
           <div>
             <p className="text-sm text-muted-foreground">
               For acquisition inquiries and exhibition opportunities.
             </p>
-            <Link to="/contact" className="text-sm text-foreground underline underline-offset-4 mt-2 inline-block">
+            <ScrollLink to="/contact" className="text-sm text-foreground underline underline-offset-4 mt-2 inline-block">
               Contact the Studio
-            </Link>
+            </ScrollLink>
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
