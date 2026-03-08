@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import emitFlow034 from "@/assets/emit-flow-034.webp";
+import emitFlow023 from "@/assets/emit-flow-023.webp";
 import emitFlow025 from "@/assets/emit-flow-025.webp";
 import emitFlow081 from "@/assets/emit-flow-081.webp";
 
@@ -15,7 +15,7 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: emitFlow034,
+    image: emitFlow023,
     alt: "Emit Flow abstract painting by John Han-Chang Lin",
     lines: ["John Han-Chang Lin", "Color as Meditation", "Flow as Expression"],
     chinese: ["林漢章", "以色彩修行", "讓靈魂流動"],

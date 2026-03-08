@@ -16,6 +16,7 @@ import emitFlow069 from "@/assets/emit-flow-069.webp";
 import emitFlow074 from "@/assets/emit-flow-074.webp";
 import emitFlow075 from "@/assets/emit-flow-075.webp";
 import emitFlow077 from "@/assets/emit-flow-077.webp";
+import emitFlow023 from "@/assets/emit-flow-023.webp";
 // New uploads
 import artworkOcean1 from "@/assets/artwork-ocean-1.webp";
 import artworkOcean2 from "@/assets/artwork-ocean-2.webp";
@@ -82,6 +83,7 @@ export const artworks: Artwork[] = [
   { id: 18, title: "Emit Flow #018", year: 2019, medium: "Mixed Media on Canvas", size: sizes[2], status: "Available", category: "Early Works", image: emitFlow075 },
   { id: 26, title: "Emit Flow #026", year: 2024, medium: "Mixed Media on Canvas", size: sizes[4], status: "Available", category: "Early Works", image: emitFlow080 },
   { id: 27, title: "Emit Flow #027", year: 2024, medium: "Mixed Media on Canvas", size: sizes[0], status: "Available", category: "Early Works", image: emitFlow081 },
+  { id: 28, title: "Emit Flow #023", year: 2023, medium: "Mixed Media on Canvas", size: sizes[2], status: "Available", category: "Ocean Flow", image: emitFlow023 },
 ];
 
 export const categories = ["All", "Ocean Flow", "Earth Layers", "Light Atmosphere", "Early Works"] as const;
