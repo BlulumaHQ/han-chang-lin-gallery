@@ -1,20 +1,21 @@
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ArtworkGrid from "@/components/ArtworkGrid";
 import HeroSlider from "@/components/HeroSlider";
-import { artworks } from "@/data/artworks";
+import { getRandomHomeArtworks } from "@/data/artworks";
 import emitFlow025 from "@/assets/emit-flow-025.webp";
 import photoStudio from "@/assets/photo-studio.webp";
 import photoGallery from "@/assets/photo-gallery.webp";
 import photoPortrait from "@/assets/photo-portrait.webp";
 
-const selectedWorks = artworks.slice(0, 6);
-
 export default function HomePage() {
+  const { heroArtworks, selectedWorks } = useMemo(() => getRandomHomeArtworks(), []);
+
   return (
     <main>
-      {/* HERO SLIDER — 3 slides */}
-      <HeroSlider />
+      {/* HERO SLIDER — 3 random slides */}
+      <HeroSlider heroArtworks={heroArtworks} />
 
       {/* ARTIST STATEMENT */}
       <section className="py-20 md:py-32 px-6 md:px-16">
@@ -33,7 +34,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SELECTED WORKS */}
+      {/* SELECTED WORKS — 6 random (no hero overlap) */}
       <section className="py-16 md:py-24 px-6 md:px-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="font-serif text-2xl md:text-3xl font-light text-foreground mb-12 text-center">
