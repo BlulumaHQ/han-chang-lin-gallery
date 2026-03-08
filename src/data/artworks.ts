@@ -16,6 +16,7 @@ import emitFlow069 from "@/assets/emit-flow-069.webp";
 import emitFlow074 from "@/assets/emit-flow-074.webp";
 import emitFlow075 from "@/assets/emit-flow-075.webp";
 import emitFlow077 from "@/assets/emit-flow-077.webp";
+import emitFlow023 from "@/assets/emit-flow-023.webp";
 // New uploads
 import artworkOcean1 from "@/assets/artwork-ocean-1.webp";
 import artworkOcean2 from "@/assets/artwork-ocean-2.webp";
