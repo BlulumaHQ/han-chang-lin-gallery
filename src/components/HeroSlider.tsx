@@ -15,7 +15,7 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: emitFlow034,
+    image: emitFlow023,
     alt: "Emit Flow abstract painting by John Han-Chang Lin",
     lines: ["John Han-Chang Lin", "Color as Meditation", "Flow as Expression"],
     chinese: ["林漢章", "以色彩修行", "讓靈魂流動"],
