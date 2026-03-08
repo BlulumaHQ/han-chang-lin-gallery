@@ -25,9 +25,20 @@ export default function SiteFooter() {
             </Link>
           </div>
         </div>
-        <div className="mt-12 pt-6 border-t border-border">
+        <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} John Han-Chang Lin. All rights reserved.
+            © 2026 John Han-Chang Lin Gallery. All rights reserved.
+          </p>
+          <p className="text-xs text-muted-foreground">
+            Web Design by{" "}
+            <a
+              href="https://bluluma.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:underline underline-offset-4 transition-colors"
+            >
+              Bluluma
+            </a>
           </p>
         </div>
       </div>
