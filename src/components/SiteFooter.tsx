@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import signatureLogo from "@/assets/signature-logo.png";
 
 export default function SiteFooter() {
   return (
@@ -7,13 +6,9 @@ export default function SiteFooter() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <img
-              src={signatureLogo}
-              alt="John Han-Chang Lin Gallery"
-              className="h-10 w-auto mb-3"
-            />
-            <p className="font-serif text-base text-muted-foreground">林漢章</p>
-            <p className="text-sm text-muted-foreground mt-2">Vancouver, Canada</p>
+            <p className="font-serif text-xl font-light text-foreground">John Han-Chang Lin</p>
+            <p className="font-serif text-lg text-muted-foreground mt-1">林漢章</p>
+            <p className="text-sm text-muted-foreground mt-3">Vancouver, Canada</p>
           </div>
           <div className="flex flex-col gap-2">
             <Link to="/gallery" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>

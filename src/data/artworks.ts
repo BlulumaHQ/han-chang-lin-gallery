@@ -36,70 +36,39 @@ const sizes = [
   "48 × 60 in",
 ];
 
-// All 18 real artwork images
-const imagePool = [
-  emitFlow034, emitFlow004, emitFlow012, emitFlow015, emitFlow006,
-  emitFlow060, emitFlow052, emitFlow064,
-  emitFlow025, emitFlow033, emitFlow039, emitFlow018,
-  emitFlow074, emitFlow077, emitFlow066,
-  emitFlow062, emitFlow069, emitFlow075,
-];
-
-function getImage(index: number): string {
-  return imagePool[index % imagePool.length];
-}
-
 function getStatus(index: number) {
   if (index % 5 === 0) return "Private Collection" as const;
   if (index % 7 === 0) return "Sold" as const;
   return "Available" as const;
 }
 
+// Exactly 18 artworks — one unique image each, no duplicates
 export const artworks: Artwork[] = [
-  // Ocean Flow — 8
-  ...Array.from({ length: 8 }, (_, i) => ({
-    id: i + 1,
-    title: `Emit Flow #${String(i + 1).padStart(3, "0")}`,
-    year: 2024 - Math.floor(i / 3),
-    medium: "Mixed Media on Canvas",
-    size: sizes[i % sizes.length],
-    status: getStatus(i),
-    category: "Ocean Flow" as const,
-    image: getImage(i),
-  })),
-  // Earth Layers — 8
-  ...Array.from({ length: 8 }, (_, i) => ({
-    id: i + 9,
-    title: `Emit Flow #${String(i + 9).padStart(3, "0")}`,
-    year: 2023 - Math.floor(i / 3),
-    medium: "Mixed Media on Canvas",
-    size: sizes[(i + 2) % sizes.length],
-    status: getStatus(i + 3),
-    category: "Earth Layers" as const,
-    image: getImage(i + 8),
-  })),
-  // Light Atmosphere — 6
-  ...Array.from({ length: 6 }, (_, i) => ({
-    id: i + 17,
-    title: `Emit Flow #${String(i + 17).padStart(3, "0")}`,
-    year: 2022 - Math.floor(i / 3),
-    medium: "Mixed Media on Canvas",
-    size: sizes[(i + 1) % sizes.length],
-    status: getStatus(i + 1),
-    category: "Light Atmosphere" as const,
-    image: getImage(i + 12),
-  })),
-  // Early Works — 6
-  ...Array.from({ length: 6 }, (_, i) => ({
-    id: i + 23,
-    title: `Emit Flow #${String(i + 23).padStart(3, "0")}`,
-    year: 2020 - Math.floor(i / 2),
-    medium: "Mixed Media on Canvas",
-    size: sizes[(i + 3) % sizes.length],
-    status: getStatus(i + 5),
-    category: "Early Works" as const,
-    image: getImage(i + 3),
-  })),
+  // Ocean Flow — 5
+  { id: 1, title: "Emit Flow #001", year: 2024, medium: "Mixed Media on Canvas", size: sizes[0], status: "Available", category: "Ocean Flow", image: emitFlow034 },
+  { id: 2, title: "Emit Flow #002", year: 2024, medium: "Mixed Media on Canvas", size: sizes[1], status: "Available", category: "Ocean Flow", image: emitFlow004 },
+  { id: 3, title: "Emit Flow #003", year: 2024, medium: "Mixed Media on Canvas", size: sizes[2], status: "Private Collection", category: "Ocean Flow", image: emitFlow012 },
+  { id: 4, title: "Emit Flow #004", year: 2023, medium: "Mixed Media on Canvas", size: sizes[3], status: "Available", category: "Ocean Flow", image: emitFlow052 },
+  { id: 5, title: "Emit Flow #005", year: 2023, medium: "Mixed Media on Canvas", size: sizes[4], status: "Available", category: "Ocean Flow", image: emitFlow060 },
+
+  // Earth Layers — 5
+  { id: 6, title: "Emit Flow #006", year: 2023, medium: "Mixed Media on Canvas", size: sizes[0], status: "Available", category: "Earth Layers", image: emitFlow025 },
+  { id: 7, title: "Emit Flow #007", year: 2023, medium: "Mixed Media on Canvas", size: sizes[1], status: "Sold", category: "Earth Layers", image: emitFlow033 },
+  { id: 8, title: "Emit Flow #008", year: 2022, medium: "Mixed Media on Canvas", size: sizes[2], status: "Available", category: "Earth Layers", image: emitFlow039 },
+  { id: 9, title: "Emit Flow #009", year: 2022, medium: "Mixed Media on Canvas", size: sizes[3], status: "Available", category: "Earth Layers", image: emitFlow018 },
+  { id: 10, title: "Emit Flow #010", year: 2022, medium: "Mixed Media on Canvas", size: sizes[4], status: "Private Collection", category: "Earth Layers", image: emitFlow064 },
+
+  // Light Atmosphere — 4
+  { id: 11, title: "Emit Flow #011", year: 2022, medium: "Mixed Media on Canvas", size: sizes[0], status: "Available", category: "Light Atmosphere", image: emitFlow074 },
+  { id: 12, title: "Emit Flow #012", year: 2021, medium: "Mixed Media on Canvas", size: sizes[1], status: "Available", category: "Light Atmosphere", image: emitFlow077 },
+  { id: 13, title: "Emit Flow #013", year: 2021, medium: "Mixed Media on Canvas", size: sizes[2], status: "Available", category: "Light Atmosphere", image: emitFlow066 },
+  { id: 14, title: "Emit Flow #014", year: 2021, medium: "Mixed Media on Canvas", size: sizes[3], status: "Sold", category: "Light Atmosphere", image: emitFlow062 },
+
+  // Early Works — 4
+  { id: 15, title: "Emit Flow #015", year: 2020, medium: "Mixed Media on Canvas", size: sizes[4], status: "Available", category: "Early Works", image: emitFlow015 },
+  { id: 16, title: "Emit Flow #016", year: 2020, medium: "Mixed Media on Canvas", size: sizes[0], status: "Available", category: "Early Works", image: emitFlow006 },
+  { id: 17, title: "Emit Flow #017", year: 2019, medium: "Mixed Media on Canvas", size: sizes[1], status: "Private Collection", category: "Early Works", image: emitFlow069 },
+  { id: 18, title: "Emit Flow #018", year: 2019, medium: "Mixed Media on Canvas", size: sizes[2], status: "Available", category: "Early Works", image: emitFlow075 },
 ];
 
 export const categories = ["All", "Ocean Flow", "Earth Layers", "Light Atmosphere", "Early Works"] as const;
