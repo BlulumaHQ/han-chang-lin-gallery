@@ -1,4 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
+function ScrollLink({ to, className, children }: { to: string; className?: string; children: React.ReactNode }) {
+  const location = useLocation();
+  const handleClick = () => {
+    if (location.pathname === to) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+  return <Link to={to} className={className} onClick={handleClick}>{children}</Link>;
+}
 
 export default function SiteFooter() {
   return (
