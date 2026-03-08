@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ArtworkGrid from "@/components/ArtworkGrid";
 import { artworks } from "@/data/artworks";
-import artworkOcean1 from "@/assets/artwork-ocean-1.webp";
-import artworkEarth1 from "@/assets/artwork-earth-1.webp";
+import emitFlow034 from "@/assets/emit-flow-034.webp";
+import emitFlow025 from "@/assets/emit-flow-025.webp";
 import photoStudio from "@/assets/photo-studio.webp";
 import photoGallery from "@/assets/photo-gallery.webp";
 import photoPortrait from "@/assets/photo-portrait.webp";
@@ -16,7 +16,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative h-screen w-full overflow-hidden">
         <img
-          src={artworkOcean1}
+          src={emitFlow034}
           alt="Emit Flow — abstract ocean landscape by John Han-Chang Lin"
           className="absolute inset-0 w-full h-full object-cover animate-fade-in-slow"
         />
@@ -78,7 +78,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="overflow-hidden">
             <img
-              src={artworkEarth1}
+              src={emitFlow025}
               alt="Earth Layers series artwork"
               className="w-full aspect-[3/4] object-cover"
               loading="lazy"
