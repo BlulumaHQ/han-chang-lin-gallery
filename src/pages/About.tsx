@@ -1,10 +1,11 @@
 import photoPortrait from "@/assets/photo-portrait.webp";
 import photoStudio from "@/assets/photo-studio.webp";
+import hsinLogo from "@/assets/hsin-logo.png";
 
 export default function AboutPage() {
   return (
     <main className="pt-20">
-      {/* Portrait */}
+      {/* Portrait + Biography */}
       <section className="px-6 md:px-16 py-12 md:py-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
           <div className="overflow-hidden">
@@ -29,16 +30,44 @@ export default function AboutPage() {
                 to abstract painting rooted in the natural movement of pigment and gravity.
               </p>
               <p>
-                With a background in picture framing, Lin spent decades working intimately
+                With a background in picture framing, Lin spent decades working closely
                 with fine art — handling, preserving, and studying works by established artists.
                 This deep familiarity with materials and technique ultimately led him to the
                 creative studio, where he began developing his own artistic voice.
               </p>
               <p>
-                Lin's paintings emerge through a process of layered pigment flows, where
+                Lin's paintings emerge through layered pigment flows where
                 color, gravity, and time collaborate to produce organic compositions
                 reminiscent of aerial landscapes, mineral formations, and ocean depths.
               </p>
+              <p>
+                In addition to his artistic practice, Lin is also the Founder of{" "}
+                <a
+                  href="https://hsinhsin.ca/founder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground underline underline-offset-4 hover:text-muted-foreground transition-colors"
+                >
+                  欣欣企業
+                </a>
+                .
+              </p>
+            </div>
+
+            {/* Hsin Hsin logo */}
+            <div className="pt-6">
+              <a
+                href="https://hsinhsin.ca/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block opacity-60 hover:opacity-100 transition-opacity"
+              >
+                <img
+                  src={hsinLogo}
+                  alt="Hsin Hsin"
+                  className="h-12 w-auto"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -54,21 +83,14 @@ export default function AboutPage() {
             "I do not paint pictures. I create conditions for paintings to emerge."
           </blockquote>
           <p className="text-base text-muted-foreground leading-relaxed">
-            Lin's artistic style reinvents the abstract expressionism of the 1960s with a unique twist.
-            Instead of using brushstrokes to complete the work, he allows the pigments to flow freely,
-            guided by gravity and the natural properties of the materials. The result is both
-            unpredictable and deeply intentional — an expression of inner emotion and a reflection
-            of the artist's spiritual journey.
-          </p>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            Each painting is a one-of-a-kind, carefully crafted work that showcases mastery
-            of color and composition. For Lin, the act of painting is inseparable from meditation —
-            a practice of presence, patience, and surrender.
+            Lin allows pigments to flow freely across the canvas, guided by gravity and the
+            natural behavior of the materials. Each painting evolves organically through time,
+            creating compositions that evoke landscapes, natural forces, and emotional states.
           </p>
           <div className="text-sm text-muted-foreground/80 leading-relaxed space-y-1 pt-4">
             <p>「繪畫對我而言，是一種修行。」</p>
-            <p>林漢章透過色彩流動與自然力量，讓畫面在畫布上逐漸生成。</p>
-            <p>每一幅作品都是獨一無二的創作，展現了對色彩與構圖的深厚掌握。</p>
+            <p>林漢章透過色彩流動與自然力量，</p>
+            <p>讓畫面在畫布上逐漸生成。</p>
           </div>
         </div>
       </section>
@@ -82,19 +104,16 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
               <p>
-                Lin's process begins with careful preparation of the canvas surface and the
-                mixing of pigments to precise consistencies. The canvas is then positioned
-                at various angles, allowing gravity to guide the flow of color across the surface.
+                Lin begins by preparing the canvas surface and carefully mixing pigments
+                to precise consistencies.
               </p>
               <p>
-                Multiple layers are applied over days and weeks, each one interacting with
-                the previous to create depth, translucency, and texture. The artist observes
-                and responds to the painting as it develops, making subtle adjustments to angle,
-                pigment density, and timing.
+                The canvas is then positioned at various angles, allowing gravity to guide
+                the movement of color.
               </p>
               <p>
-                The final compositions evoke natural phenomena — erosion patterns, ocean currents,
-                atmospheric formations — yet emerge entirely from the dialogue between material and process.
+                Layers interact over time, forming textures, depth, and translucency that
+                resemble erosion patterns, ocean currents, and atmospheric formations.
               </p>
             </div>
             <div className="overflow-hidden">
