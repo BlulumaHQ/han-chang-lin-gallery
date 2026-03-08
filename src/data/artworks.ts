@@ -1,8 +1,21 @@
-import artworkOcean1 from "@/assets/artwork-ocean-1.webp";
-import artworkOcean2 from "@/assets/artwork-ocean-2.webp";
-import artworkEarth1 from "@/assets/artwork-earth-1.webp";
-import artworkEarth2 from "@/assets/artwork-earth-2.webp";
-import artworkLight1 from "@/assets/artwork-light-1.webp";
+import emitFlow004 from "@/assets/emit-flow-004.webp";
+import emitFlow006 from "@/assets/emit-flow-006.webp";
+import emitFlow012 from "@/assets/emit-flow-012.webp";
+import emitFlow015 from "@/assets/emit-flow-015.webp";
+import emitFlow018 from "@/assets/emit-flow-018.webp";
+import emitFlow025 from "@/assets/emit-flow-025.webp";
+import emitFlow033 from "@/assets/emit-flow-033.webp";
+import emitFlow034 from "@/assets/emit-flow-034.webp";
+import emitFlow039 from "@/assets/emit-flow-039.webp";
+import emitFlow052 from "@/assets/emit-flow-052.webp";
+import emitFlow060 from "@/assets/emit-flow-060.webp";
+import emitFlow062 from "@/assets/emit-flow-062.webp";
+import emitFlow064 from "@/assets/emit-flow-064.webp";
+import emitFlow066 from "@/assets/emit-flow-066.webp";
+import emitFlow069 from "@/assets/emit-flow-069.webp";
+import emitFlow074 from "@/assets/emit-flow-074.webp";
+import emitFlow075 from "@/assets/emit-flow-075.webp";
+import emitFlow077 from "@/assets/emit-flow-077.webp";
 
 export interface Artwork {
   id: number;
@@ -23,21 +36,20 @@ const sizes = [
   "48 × 60 in",
 ];
 
-const statuses: Array<"Available" | "Private Collection" | "Sold"> = [
-  "Available",
-  "Private Collection",
-  "Sold",
+// All 18 real artwork images
+const imagePool = [
+  emitFlow034, emitFlow004, emitFlow012, emitFlow015, emitFlow006,
+  emitFlow060, emitFlow052, emitFlow064,
+  emitFlow025, emitFlow033, emitFlow039, emitFlow018,
+  emitFlow074, emitFlow077, emitFlow066,
+  emitFlow062, emitFlow069, emitFlow075,
 ];
-
-// Cycle through available images as placeholders
-const imagePool = [artworkOcean1, artworkOcean2, artworkEarth1, artworkEarth2, artworkLight1];
 
 function getImage(index: number): string {
   return imagePool[index % imagePool.length];
 }
 
 function getStatus(index: number) {
-  // Distribute statuses realistically
   if (index % 5 === 0) return "Private Collection" as const;
   if (index % 7 === 0) return "Sold" as const;
   return "Available" as const;
@@ -64,7 +76,7 @@ export const artworks: Artwork[] = [
     size: sizes[(i + 2) % sizes.length],
     status: getStatus(i + 3),
     category: "Earth Layers" as const,
-    image: getImage(i + 2),
+    image: getImage(i + 8),
   })),
   // Light Atmosphere — 6
   ...Array.from({ length: 6 }, (_, i) => ({
@@ -75,7 +87,7 @@ export const artworks: Artwork[] = [
     size: sizes[(i + 1) % sizes.length],
     status: getStatus(i + 1),
     category: "Light Atmosphere" as const,
-    image: getImage(i + 4),
+    image: getImage(i + 12),
   })),
   // Early Works — 6
   ...Array.from({ length: 6 }, (_, i) => ({
@@ -86,7 +98,7 @@ export const artworks: Artwork[] = [
     size: sizes[(i + 3) % sizes.length],
     status: getStatus(i + 5),
     category: "Early Works" as const,
-    image: getImage(i + 1),
+    image: getImage(i + 3),
   })),
 ];
 
