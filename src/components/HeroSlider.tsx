@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import emitFlow023 from "@/assets/emit-flow-023.webp";
-import emitFlow025 from "@/assets/emit-flow-025.webp";
-import emitFlow081 from "@/assets/emit-flow-081.webp";
+import type { Artwork } from "@/data/artworks";
 
 interface Slide {
   image: string;
@@ -13,35 +11,38 @@ interface Slide {
   cta?: { label: string; to: string };
 }
 
-const slides: Slide[] = [
+const slideText: Omit<Slide, "image" | "alt">[] = [
   {
-    image: emitFlow023,
-    alt: "Emit Flow abstract painting by John Han-Chang Lin",
     lines: ["John Han-Chang Lin", "Color as Meditation", "Flow as Expression"],
     chinese: ["林漢章", "以色彩修行", "讓靈魂流動"],
     cta: { label: "View Gallery", to: "/gallery" },
   },
   {
-    image: emitFlow025,
-    alt: "Abstract earth layers painting by John Han-Chang Lin",
     lines: ["Painting is a form of meditation."],
     chinese: ["繪畫是一種修行"],
   },
   {
-    image: emitFlow081,
-    alt: "Emit Flow colorful abstract painting by John Han-Chang Lin",
     lines: ["Pigment, Gravity, Time"],
     chinese: ["顏料、重力與時間"],
     cta: { label: "Explore the Work", to: "/gallery" },
   },
 ];
 
-export default function HeroSlider() {
+interface HeroSliderProps {
+  heroArtworks: Artwork[];
+}
+
+export default function HeroSlider({ heroArtworks }: HeroSliderProps) {
   const [current, setCurrent] = useState(0);
   const [zoom, setZoom] = useState(false);
 
+  const slides: Slide[] = heroArtworks.map((artwork, i) => ({
+    ...slideText[i],
+    image: artwork.image,
+    alt: `${artwork.title} abstract painting by John Han-Chang Lin`,
+  }));
+
   useEffect(() => {
-    // Trigger zoom on mount and on slide change
     setZoom(false);
     const zoomTimer = requestAnimationFrame(() => setZoom(true));
     const interval = setInterval(() => {
@@ -51,7 +52,7 @@ export default function HeroSlider() {
       clearInterval(interval);
       cancelAnimationFrame(zoomTimer);
     };
-  }, [current]);
+  }, [current, slides.length]);
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
