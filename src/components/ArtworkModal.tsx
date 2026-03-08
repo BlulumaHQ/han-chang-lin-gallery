@@ -12,13 +12,13 @@ export default function ArtworkModal({ artwork, open, onClose }: ArtworkModalPro
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl w-[95vw] p-0 bg-background border-border overflow-hidden">
-        <div className="flex flex-col md:flex-row">
-          <div className="md:w-2/3 bg-muted">
+      <DialogContent className="max-w-[95vw] max-h-[95vh] w-auto p-0 bg-background border-border overflow-hidden">
+        <div className="flex flex-col md:flex-row items-start">
+          <div className="flex items-center justify-center bg-muted p-4">
             <img
               src={artwork.image}
               alt={artwork.title}
-              className="w-full h-64 md:h-[70vh] object-cover"
+              className="object-contain max-h-[90vh] max-w-[90vw] md:max-w-[60vw]"
             />
           </div>
           <div className="md:w-1/3 p-6 md:p-8 flex flex-col justify-center gap-4">
