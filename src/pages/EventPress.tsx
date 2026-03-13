@@ -22,7 +22,7 @@ import ep018 from "@/assets/event-press-018.webp";
 import ep019 from "@/assets/event-press-019.webp";
 import ep020 from "@/assets/event-press-020.jpg";
 
-const photos = [ep001, ep002, ep003, ep004, ep005, ep006, ep007, ep008, ep009, ep010, ep011, ep012, ep013, ep014, ep015, ep016, ep017, ep018, ep019, ep020];
+const photos = [ep001, ep002, ep003, ep004, ep006, ep007, ep008, ep009, ep010, ep011, ep012, ep013, ep014, ep015, ep016, ep017, ep018, ep019, ep020];
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
