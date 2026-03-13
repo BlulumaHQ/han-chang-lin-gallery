@@ -78,7 +78,7 @@ export const artworks: Artwork[] = [
   { id: "2106", title: "Emit Flow #2106", year: 2021, medium: "Mixed Media on Canvas", size: "30 × 58 in", status: "Private Collection", image: emitFlow2106, selected: false, hero: false, colorCategory: "Emerald Flow" },
   { id: "2509", title: "Emit Flow #2509", year: 2025, medium: "Mixed Media on Canvas", size: "24 × 30 in", status: "Available", image: emitFlow2509, selected: true, hero: false, colorCategory: "Celestial Mist" },
   // Batch 3
-  { id: "1108", title: "Emit Flow #1108", year: 2011, medium: "Mixed Media on Canvas", size: "24 × 24 in", status: "Private Collection", image: emitFlow1108, selected: false, hero: false, colorCategory: "Emerald Flow" },
+  { id: "1103", title: "Emit Flow #1103", year: 2011, medium: "Mixed Media on Canvas", size: "24 × 24 in", status: "Private Collection", image: emitFlow1108, selected: false, hero: false, colorCategory: "Emerald Flow" },
   { id: "1301", title: "Emit Flow #1301", year: 2013, medium: "Mixed Media on Canvas", size: "18 × 36 in", status: "Private Collection", image: emitFlow1301, selected: true, hero: true, colorCategory: "Emerald Flow" },
   { id: "1304", title: "Emit Flow #1304", year: 2013, medium: "Mixed Media on Canvas", size: "20 × 52 in", status: "Private Collection", image: emitFlow1304, selected: false, hero: false, colorCategory: "Ocean Depths" },
   { id: "1706", title: "Emit Flow #1706", year: 2017, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Private Collection", image: emitFlow1706, selected: true, hero: true, colorCategory: "Ocean Depths" },
