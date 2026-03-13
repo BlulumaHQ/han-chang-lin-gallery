@@ -20,6 +20,17 @@ import emitFlow2014 from "@/assets/emit-flow-2014.webp";
 import emitFlow2103 from "@/assets/emit-flow-2103.webp";
 import emitFlow2106 from "@/assets/emit-flow-2106.webp";
 import emitFlow2509 from "@/assets/emit-flow-2509.webp";
+// Batch 3
+import emitFlow1108 from "@/assets/emit-flow-1108.webp";
+import emitFlow1301 from "@/assets/emit-flow-1301.webp";
+import emitFlow1304 from "@/assets/emit-flow-1304.webp";
+import emitFlow1706 from "@/assets/emit-flow-1706.webp";
+import emitFlow1803 from "@/assets/emit-flow-1803.webp";
+import emitFlow2502 from "@/assets/emit-flow-2502.webp";
+import emitFlow2506 from "@/assets/emit-flow-2506.webp";
+import emitFlow2507 from "@/assets/emit-flow-2507.webp";
+import emitFlow2508 from "@/assets/emit-flow-2508.webp";
+import emitFlow2510 from "@/assets/emit-flow-2510.webp";
 
 export interface Artwork {
   id: string;
@@ -56,6 +67,17 @@ export const artworks: Artwork[] = [
   { id: "2103", title: "Emit Flow #2103", year: 2021, medium: "Mixed Media on Canvas", size: "30 × 40 in", status: "Available", image: emitFlow2103, selected: false, hero: false },
   { id: "2106", title: "Emit Flow #2106", year: 2021, medium: "Mixed Media on Canvas", size: "30 × 58 in", status: "Private Collection", image: emitFlow2106, selected: false, hero: false },
   { id: "2509", title: "Emit Flow #2509", year: 2025, medium: "Mixed Media on Canvas", size: "24 × 30 in", status: "Available", image: emitFlow2509, selected: true, hero: false },
+  // Batch 3
+  { id: "1108", title: "Emit Flow #1108", year: 2011, medium: "Mixed Media on Canvas", size: "24 × 24 in", status: "Private Collection", image: emitFlow1108, selected: false, hero: false },
+  { id: "1301", title: "Emit Flow #1301", year: 2013, medium: "Mixed Media on Canvas", size: "18 × 36 in", status: "Private Collection", image: emitFlow1301, selected: true, hero: true },
+  { id: "1304", title: "Emit Flow #1304", year: 2013, medium: "Mixed Media on Canvas", size: "20 × 52 in", status: "Private Collection", image: emitFlow1304, selected: false, hero: false },
+  { id: "1706", title: "Emit Flow #1706", year: 2017, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Private Collection", image: emitFlow1706, selected: true, hero: true },
+  { id: "1803", title: "Emit Flow #1803", year: 2018, medium: "Mixed Media on Canvas", size: "16 × 20 in", status: "Private Collection", image: emitFlow1803, selected: true, hero: false },
+  { id: "2502", title: "Emit Flow #2502", year: 2025, medium: "Mixed Media on Canvas", size: "20 × 30 in", status: "Private Collection", image: emitFlow2502, selected: true, hero: false },
+  { id: "2506", title: "Emit Flow #2506", year: 2025, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Available", image: emitFlow2506, selected: false, hero: false },
+  { id: "2507", title: "Emit Flow #2507", year: 2025, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Available", image: emitFlow2507, selected: false, hero: false },
+  { id: "2508", title: "Emit Flow #2508", year: 2025, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Available", image: emitFlow2508, selected: true, hero: true },
+  { id: "2510", title: "Emit Flow #2510", year: 2025, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Available", image: emitFlow2510, selected: false, hero: false },
 ];
 
 /** Shuffle array using Fisher-Yates */
