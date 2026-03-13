@@ -12,7 +12,6 @@ const filters: { label: string; value: FilterType }[] = [
   { label: "Crimson Energy", value: "Crimson Energy" },
   { label: "Celestial Mist", value: "Celestial Mist" },
   { label: "Earth Tones", value: "Earth Tones" },
-  { label: "Spectrum", value: "Spectrum" },
   { label: "Available", value: "Available" },
   { label: "Private Collection", value: "Private Collection" },
 ];
