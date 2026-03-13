@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import ArtworkGrid from "@/components/ArtworkGrid";
 import HeroSlider from "@/components/HeroSlider";
 import { getRandomHomeArtworks } from "@/data/artworks";
-import emitFlow025 from "@/assets/emit-flow-025.webp";
 import photoStudio from "@/assets/photo-studio.webp";
 import photoGallery from "@/assets/photo-gallery.webp";
 import photoPortrait from "@/assets/photo-portrait.webp";
@@ -34,7 +33,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SELECTED WORKS — 6 random (no hero overlap) */}
+      {/* SELECTED WORKS */}
       <section className="py-16 md:py-24 px-6 md:px-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="font-serif text-2xl md:text-3xl font-light text-foreground mb-12 text-center">
@@ -54,8 +53,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="overflow-hidden">
             <img
-              src={emitFlow025}
-              alt="Earth Layers series artwork by John Han-Chang Lin"
+              src={heroArtworks[0]?.image}
+              alt="Artwork by John Han-Chang Lin"
               className="w-full aspect-[3/4] object-cover"
               loading="lazy"
             />
