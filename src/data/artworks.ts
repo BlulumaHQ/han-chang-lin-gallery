@@ -39,7 +39,7 @@ import emitFlow1302 from "@/assets/emit-flow-1302.webp";
 import emitFlow1307 from "@/assets/emit-flow-1307.webp";
 import emitFlow1508 from "@/assets/emit-flow-1508.webp";
 
-export type ColorCategory = "Ocean Depths" | "Emerald Flow" | "Golden Light" | "Crimson Energy" | "Celestial Mist" | "Earth Tones" | "Spectrum";
+export type ColorCategory = "Ocean Depths" | "Emerald Flow" | "Golden Light" | "Crimson Energy" | "Celestial Mist" | "Earth Tones";
 
 export interface Artwork {
   id: string;
@@ -86,11 +86,11 @@ export const artworks: Artwork[] = [
   { id: "2502", title: "Emit Flow #2502", year: 2025, medium: "Mixed Media on Canvas", size: "20 × 30 in", status: "Private Collection", image: emitFlow2502, selected: true, hero: false, colorCategory: "Emerald Flow" },
   { id: "2506", title: "Emit Flow #2506", year: 2025, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Available", image: emitFlow2506, selected: false, hero: false, colorCategory: "Emerald Flow" },
   { id: "2507", title: "Emit Flow #2507", year: 2025, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Available", image: emitFlow2507, selected: false, hero: false, colorCategory: "Golden Light" },
-  { id: "2508", title: "Emit Flow #2508", year: 2025, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Available", image: emitFlow2508, selected: true, hero: true, colorCategory: "Spectrum" },
-  { id: "2510", title: "Emit Flow #2510", year: 2025, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Available", image: emitFlow2510, selected: false, hero: false, colorCategory: "Spectrum" },
+  { id: "2508", title: "Emit Flow #2508", year: 2025, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Available", image: emitFlow2508, selected: true, hero: true, colorCategory: "Earth Tones" },
+  { id: "2510", title: "Emit Flow #2510", year: 2025, medium: "Mixed Media on Canvas", size: "22 × 26 in", status: "Available", image: emitFlow2510, selected: false, hero: false, colorCategory: "Earth Tones" },
   // Batch 4
-  { id: "1008", title: "Emit Flow #1008", year: 2010, medium: "Mixed Media on Canvas", size: "30 × 40 in", status: "Available", image: emitFlow1008, selected: false, hero: false, colorCategory: "Spectrum" },
-  { id: "1008-b", title: "Emit Flow #1008", year: 2010, medium: "Mixed Media on Canvas", size: "18 × 36 in", status: "Available", image: emitFlow1008b, selected: false, hero: false, colorCategory: "Spectrum" },
+  { id: "1008", title: "Emit Flow #1008", year: 2010, medium: "Mixed Media on Canvas", size: "30 × 40 in", status: "Available", image: emitFlow1008, selected: false, hero: false, colorCategory: "Earth Tones" },
+  { id: "1008-b", title: "Emit Flow #1008", year: 2010, medium: "Mixed Media on Canvas", size: "18 × 36 in", status: "Available", image: emitFlow1008b, selected: false, hero: false, colorCategory: "Earth Tones" },
   { id: "1108-b", title: "Emit Flow #1108", year: 2011, medium: "Mixed Media on Canvas", size: "22 × 28 in", status: "Private Collection", image: emitFlow1108b, selected: false, hero: false, colorCategory: "Celestial Mist" },
   { id: "1302", title: "Emit Flow #1302", year: 2013, medium: "Mixed Media on Canvas", size: "22 × 28 in", status: "Available", image: emitFlow1302, selected: true, hero: true, colorCategory: "Crimson Energy" },
   { id: "1307", title: "Emit Flow #1307", year: 2013, medium: "Mixed Media on Canvas", size: "22 × 32 in", status: "Private Collection", image: emitFlow1307, selected: false, hero: false, colorCategory: "Golden Light" },
