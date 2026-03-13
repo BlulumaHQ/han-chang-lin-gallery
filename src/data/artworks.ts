@@ -31,6 +31,13 @@ import emitFlow2506 from "@/assets/emit-flow-2506.webp";
 import emitFlow2507 from "@/assets/emit-flow-2507.webp";
 import emitFlow2508 from "@/assets/emit-flow-2508.webp";
 import emitFlow2510 from "@/assets/emit-flow-2510.webp";
+// Batch 4
+import emitFlow1008 from "@/assets/emit-flow-1008.webp";
+import emitFlow1008b from "@/assets/emit-flow-1008-b.webp";
+import emitFlow1108b from "@/assets/emit-flow-1108-b.webp";
+import emitFlow1302 from "@/assets/emit-flow-1302.webp";
+import emitFlow1307 from "@/assets/emit-flow-1307.webp";
+import emitFlow1508 from "@/assets/emit-flow-1508.webp";
 
 export interface Artwork {
   id: string;
