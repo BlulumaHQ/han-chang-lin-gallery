@@ -5,7 +5,7 @@ import ep001 from "@/assets/event-press-001.webp";
 import ep002 from "@/assets/event-press-002.webp";
 import ep003 from "@/assets/event-press-003.webp";
 import ep004 from "@/assets/event-press-004.webp";
-import ep005 from "@/assets/event-press-005.webp";
+
 import ep006 from "@/assets/event-press-006.webp";
 import ep007 from "@/assets/event-press-007.webp";
 import ep008 from "@/assets/event-press-008.webp";
