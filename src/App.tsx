@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Exhibitions from "./pages/Exhibitions";
+import EventPress from "./pages/EventPress";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
