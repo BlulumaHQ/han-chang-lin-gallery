@@ -39,7 +39,7 @@ import emitFlow1302 from "@/assets/emit-flow-1302.webp";
 import emitFlow1307 from "@/assets/emit-flow-1307.webp";
 import emitFlow1508 from "@/assets/emit-flow-1508.webp";
 
-export type ColorCategory = "Ocean Depths" | "Emerald Flow" | "Golden Light" | "Crimson Energy" | "Celestial Mist" | "Earth Tones" | "Spectrum";
+export type ColorCategory = "Ocean Depths" | "Emerald Flow" | "Golden Light" | "Crimson Energy" | "Celestial Mist" | "Earth Tones";
 
 export interface Artwork {
   id: string;
