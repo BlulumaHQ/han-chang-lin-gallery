@@ -10,7 +10,7 @@ export default function ContactPage() {
     const data = new FormData(form);
 
     try {
-      await fetch("https://formspree.io/f/xpwzgkvl", {
+      await fetch("https://formspree.io/f/mbdabbql", {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" },
