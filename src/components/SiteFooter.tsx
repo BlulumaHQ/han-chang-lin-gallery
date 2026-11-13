@@ -32,12 +32,12 @@ export default function SiteFooter() {
           <p className="text-xs text-muted-foreground">
             Web Design by{" "}
             <a
-              href="https://bluluma.com"
+              href="https://sonykundesign.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:underline underline-offset-4 transition-colors"
             >
-              Bluluma
+              Sonykun Design
             </a>
           </p>
         </div>
